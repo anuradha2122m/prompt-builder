@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
-import Link from 'next/link';
 import { getAllPrompts, getAllCategories, getAllModels } from '@/lib/prompts';
 import PromptCardWithStats from '@/components/PromptCardWithStats';
 
@@ -74,7 +73,7 @@ export default function Home() {
 
     // If no filters applied, show curated mix from priority categories
     if (selectedCategories.length === 0 && selectedModel === 'all' && !searchQuery.trim()) {
-      const mixedPrompts: any[] = [];
+      const mixedPrompts: typeof allPrompts = [];
       const usedIds = new Set<string>();
       const coreCategories = ['Product Management', 'Design', 'Productivity', 'Marketing', 'Business'];
       

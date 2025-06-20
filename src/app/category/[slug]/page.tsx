@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getAllCategories, getPromptsByCategory, convertToCardData } from '@/lib/prompts';
+import { getAllCategories, getPromptsByCategory } from '@/lib/prompts';
 import PromptCardWithStats from '@/components/PromptCardWithStats';
 import SearchBar from '@/components/SearchBar';
 

@@ -42,7 +42,7 @@ export default async function PromptPage({ params }: PromptPageProps) {
     notFound();
   }
 
-  const getModelBadgeColor = (model: string) => {
+  const getModelBadgeColor = () => {
     return 'bg-gray-700 text-gray-300 border border-gray-600';
   };
 
