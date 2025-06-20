@@ -161,7 +161,7 @@ export default async function PromptPage({ params }: PromptPageProps) {
                     prompt.model_parameters.models.map((model) => (
                       <span
                         key={model}
-                        className={`inline-flex items-center px-3 py-1 rounded-lg text-sm font-medium ${getModelBadgeColor(model)} font-mono`}
+                        className={`inline-flex items-center px-3 py-1 rounded-lg text-sm font-medium ${getModelBadgeColor()} font-mono`}
                       >
                         {formatModelName(model)}
                       </span>
